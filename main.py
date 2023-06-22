@@ -1,1 +1,1 @@
-from deciphertest import *
+from basic import *

@@ -30,4 +30,4 @@ if desire == "cipher":
       cycle += 1
     cipheredtext.append(testtext)
     abc +=1
-print("".join(cipheredtext))
+  print("".join(cipheredtext))
