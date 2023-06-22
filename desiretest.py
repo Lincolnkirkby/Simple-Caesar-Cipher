@@ -1,14 +1,11 @@
-import random
-
 desire = "null"
 while desire == "null":
   desire = input("do you want to cipher text or do you want to decipher text?").lower()
   if desire == "cipher" or desire == "c":
-    desire = "cipher"
-    continue
+   continue
   elif desire == "decipher" or desire == "d":
-    desire = "decipher"
-    continue
+   continue
   else: 
     desire = "null"
     print("error, only acceptable inputs are \"chipher\",\"decipher\",\"c\" and \"d\"")
+print(desire)
