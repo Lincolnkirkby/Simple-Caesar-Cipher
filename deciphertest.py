@@ -1,7 +1,7 @@
 import random
 
-cipheredtext = []
-desire = "cipher"
+decipheredtext = []
+desire = "decipher"
 characterlist = [
   'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o',
   'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
@@ -10,10 +10,9 @@ newcharacterlist = [
   'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o',
   'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
 ]
-if desire == "cipher":
-  text = input("input desired text:")
-  print("what is the key you would like to use to generate the ciphered text?")
-  key = input("make sure it's somthing you will remember: ")
+if desire == "decipher":
+  text = input("input ciphered text:")
+  key = input("what was the key used to generate the ciphered text?")
   random.seed(key)
   random.shuffle(newcharacterlist)
   textlength = len(text)
@@ -26,8 +25,8 @@ if desire == "cipher":
       if testtext != text[abc]:
         cycle = 26
         continue
-      testtext = text[abc].replace(characterlist[cycle], newcharacterlist[cycle])
+      testtext = text[abc].replace(newcharacterlist[cycle], characterlist[cycle])
       cycle += 1
-    cipheredtext.append(testtext)
+    decipheredtext.append(testtext)
     abc +=1
-print("".join(cipheredtext))
+print("".join(decipheredtext))
