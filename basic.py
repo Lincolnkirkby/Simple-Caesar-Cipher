@@ -37,7 +37,7 @@ while desire == "null":
   else:
     desire = "null"
     print(
-      "error, only acceptable inputs are \"chipher\",\"decipher\",\"c\" and \"d\""
+      "error, only acceptable inputs are \"cipher\",\"decipher\",\"c\" and \"d\""
     )
 #^ sed to determine the desire of the user, a.k.a whether they want to cipher or decipher
 
