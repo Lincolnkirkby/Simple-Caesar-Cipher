@@ -13,7 +13,7 @@ newcharacterlist = [
 if desire == "cipher":
   text = input("input desired text:")
   print("what is the key you would like to use to generate the ciphered text?")
-  key = input("make sure it's somthing you will remember: ")
+  key = input("make sure it's something you will remember: ")
   random.seed(key)
   random.shuffle(newcharacterlist)
   textlength = len(text)

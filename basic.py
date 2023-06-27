@@ -27,7 +27,7 @@ desire = "null"
 #^ variable used to read whether the user is deciphering or ciphering text
 while desire == "null":
   desire = input(
-    "do you want to cipher text or do you want to decipher text?").lower()
+    "do you want to cipher text or do you want to decipher text? ").lower()
   if desire == "cipher" or desire == "c":
     desire = "cipher"
     continue
@@ -43,7 +43,7 @@ while desire == "null":
 
 if desire == "cipher":
   textinputstr = "input the text you wish to be ciphered:"
-  keyinputstr = "what is the key you would like to use to generate the ciphered text? \n make sure it's somthing you will remember:"
+  keyinputstr = "what is the key you would like to use to generate the ciphered text? \n make sure it's something you will remember:"
 
 #^ text to only be displayed if ciphering
 if desire == "decipher":

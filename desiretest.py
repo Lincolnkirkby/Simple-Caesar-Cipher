@@ -2,7 +2,7 @@ desire = "null"
 while desire == "null":
   desire = input("do you want to cipher text or do you want to decipher text?").lower()
   if desire == "cipher" or desire == "c":
-    desire = "decipher"
+    desire = "cipher"
     continue
   elif desire == "decipher" or desire == "d":
     desire = "decipher"
